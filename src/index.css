@@ -1,0 +1,65 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  html,
+  body {
+    color: #777;
+    font-family: theme(fontFamily.body);
+  }
+
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    font-family: theme(fontFamily.libre);
+    line-height: 1.2;
+    font-weight: 700;
+    color: theme(colors.lunar-green.DEFAULT);
+  }
+  h1 {
+    font-size: theme(fontSize.4xl);
+  }
+  h2 {
+    font-size: theme(fontSize.3xl);
+  }
+  h3 {
+    font-size: theme(fontSize.2xl);
+  }
+  h4 {
+    font-size: theme(fontSize.xl);
+  }
+  h5 {
+    font-size: theme(fontSize.lg);
+  }
+}
+@layer components {
+  @media (min-width: theme(screens.sm)) {
+    .container {
+      max-width: 540px;
+    }
+  }
+  @media (min-width: theme(screens.md)) {
+    .container {
+      max-width: 720px;
+    }
+  }
+  @media (min-width: theme(screens.lg)) {
+    .container {
+      max-width: 960px;
+    }
+  }
+  @media (min-width: theme(screens.xl)) {
+    .container {
+      max-width: 1140px;
+    }
+  }
+  @media (min-width: theme(screens.2xl)) {
+    .container {
+      max-width: 1320px;
+    }
+  }
+}
