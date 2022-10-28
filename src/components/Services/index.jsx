@@ -1,4 +1,4 @@
-import TitleSection from '@/components/UI/TitleSection';
+import TitleSection from '@/components/TitleSection';
 import Item from './Item';
 
 const data = [

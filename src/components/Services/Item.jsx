@@ -1,6 +1,6 @@
+import Avatar from '@/components/Avatar';
+import Card from '@/components/Card';
 import BiChevronDoubleRight from '@/components/Icon/BiChevronDoubleRight';
-import Avatar from '@/components/UI/Avatar';
-import Card from '@/components/UI/Card';
 import { Link } from 'react-router-dom';
 
 const Item = ({ title, banner, body }) => {

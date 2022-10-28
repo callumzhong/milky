@@ -1,5 +1,5 @@
-import TypcnTick from '../Icon/TypcnTick';
-import Button from '../UI/Button';
+import Button from '@/components/Button';
+import TypcnTick from '@/components/Icon/TypcnTick';
 
 const Description = () => {
   return (
@@ -32,4 +32,4 @@ const Description = () => {
   );
 };
 
-export default Description
+export default Description;

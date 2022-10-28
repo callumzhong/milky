@@ -7,7 +7,7 @@ const Carousel = () => {
           <div className='text-2xl'>
             Welcome to our dairy farm
           </div>
-          <h3 className='text-[5rem] w-[736px] font-bold mb-12 leading-tight text-white'>
+          <h3 className='text-[5rem] font-bold mb-12 leading-tight text-white'>
             The Farm of Dairy products
           </h3>
           <a

@@ -1,4 +1,4 @@
-import TitleSection from '@/components/UI/TitleSection';
+import TitleSection from '@/components/TitleSection';
 import Description from './Description';
 
 const Features = () => {
