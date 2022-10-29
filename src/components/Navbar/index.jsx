@@ -1,4 +1,4 @@
-import SimpleLineIconsMagnifier from '@/components/Icon/SimpleLineIconsMagnifier';
+import { SimpleLineIconsMagnifier } from '@/components/Icon';
 import Link from './Link';
 const Navbar = () => {
   return (

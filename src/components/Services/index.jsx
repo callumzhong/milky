@@ -32,9 +32,8 @@ const Services = () => {
       </div>
       <div className='flex flex-wrap -mx-3 pt-20'>
         {data.map((item) => (
-          <div className='basis-1/3 px-3'>
+          <div key={item.title} className='basis-1/3 px-3'>
             <Item
-              key={item.title}
               banner={item.banner}
               title={item.title}
               body={item.body}

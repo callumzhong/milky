@@ -6,18 +6,6 @@ module.exports = {
       libre: ['"Libre Baskerville"', 'serif'],
       body: ['"Open Sans"', 'sans-serif'],
     },
-    fontSize: {
-      lg: '1.25rem',
-      xl: '1.5rem',
-      '2xl': '1.75rem',
-      '3xl': '2rem',
-      '4xl': '2.5rem',
-      '5xl': '3rem',
-      '6xl': '3.5rem',
-      '7xl': '4rem',
-      '8xl': '4.5rem',
-      '9xl': '5rem',
-    },
     screens: {
       sm: '576px',
       md: '768px',
@@ -30,6 +18,18 @@ module.exports = {
       padding: '12px',
     },
     extend: {
+      fontSize: {
+        lg: '1.25rem',
+        xl: '1.5rem',
+        '2xl': '1.75rem',
+        '3xl': '2rem',
+        '4xl': '2.5rem',
+        '5xl': '3rem',
+        '6xl': '3.5rem',
+        '7xl': '4rem',
+        '8xl': '4.5rem',
+        '9xl': '5rem',
+      },
       colors: {
         'lunar-green': {
           DEFAULT: '#404A3D',

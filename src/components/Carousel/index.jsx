@@ -1,3 +1,5 @@
+import Button from '@/components/Button';
+
 const Carousel = () => {
   return (
     <figure className='relative mb-12'>
@@ -10,13 +12,7 @@ const Carousel = () => {
           <h3 className='text-[5rem] font-bold mb-12 leading-tight text-white'>
             The Farm of Dairy products
           </h3>
-          <a
-            href=''
-            className='rounded-full inline-block py-4 
-             px-14 bg-confetti text-lunar-green font-medium'
-          >
-            Explore More
-          </a>
+          <Button>Explore More</Button>
         </div>
       </figcaption>
     </figure>

@@ -2,7 +2,7 @@ import clsx from 'clsx';
 import { Link } from 'react-router-dom';
 const styles = {
   common:
-    'inline-block font-medium text-lunar-green bg-confetti rounded-full',
+    'inline-block font-medium text-lunar-green bg-confetti hover:bg-confetti-700 ease-in-out duration-200 rounded-full',
   'size-base': 'px-14 py-4',
   'size-small': 'px-6 py-2',
 };

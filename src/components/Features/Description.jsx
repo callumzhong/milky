@@ -1,5 +1,5 @@
 import Button from '@/components/Button';
-import TypcnTick from '@/components/Icon/TypcnTick';
+import { TypcnTick } from '@/components/Icon';
 
 const Description = () => {
   return (

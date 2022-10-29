@@ -1,8 +1,10 @@
-import IcBaselinePhone from '@/components/Icon/IcBaselinePhone';
-import IonSocialFacebook from '@/components/Icon/IonSocialFacebook';
-import MdiInstagram from '@/components/Icon/MdiInstagram';
-import MdiTwitter from '@/components/Icon/MdiTwitter';
-import RiLinkedinFill from '@/components/Icon/RiLinkedinFill';
+import {
+  IcBaselinePhone,
+  IonSocialFacebook,
+  MdiInstagram,
+  MdiTwitter,
+  RiLinkedinFill,
+} from '@/components/Icon';
 
 const TopBar = () => {
   return (
