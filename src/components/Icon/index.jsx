@@ -1,4 +1,7 @@
 export { default as BiChevronDoubleRight } from './BiChevronDoubleRight';
+export { default as CarbonChevronLeft } from './CarbonChevronLeft';
+export { default as CarbonChevronRight } from './CarbonChevronRight';
+export { default as FaQuoteLeft } from './FaQuoteLeft';
 export { default as IcBaselinePhone } from './IcBaselinePhone';
 export { default as IconoirLink } from './IconoirLink';
 export { default as IonSocialFacebook } from './IonSocialFacebook';
