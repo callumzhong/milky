@@ -84,6 +84,15 @@ module.exports = {
           900: '#878787',
         },
       },
+      animation: {
+        pulse: 'pulse 1s both infinite',
+      },
+      keyframes: {
+        pulse: {
+          '0%, 100%': { transform: 'scaleX(1)' },
+          '50%': { transform: 'scale3d(1.05,1.05,1.05)' },
+        },
+      },
     },
   },
   plugins: [],

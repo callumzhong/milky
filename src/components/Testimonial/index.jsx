@@ -7,7 +7,7 @@ import TitleSection from '../TitleSection';
 
 const Testimonial = () => {
   return (
-    <section className='container  py-12'>
+    <section className='container py-12 mb-12'>
       <div className='max-w-lg text-center mx-auto mb-12'>
         <TitleSection icon='both' align='center'>
           TESTIMONIAL
@@ -16,22 +16,34 @@ const Testimonial = () => {
           What People Say About Our Dairy Farm
         </h2>
       </div>
-      <div className='flex -mx-3'>
-        <div className='relative basis-5/12 px-3'>
-          <img
-            className='absolute top-0 left-0 rounded-full block animate-bounce'
-            src='https://source.unsplash.com/random/100x100'
-            alt=''
-          />
-          <img
-            className='absolute top-8 left-1/2 rounded-full block animate-bounce'
-            src='https://source.unsplash.com/random/100x100'
-            alt=''
-          />
+      <div className='flex -mx-6'>
+        <div className='relative basis-5/12 px-6'>
+          <div className='relative h-full w-full'>
+            <img
+              className='absolute top-0 left-0 rounded-full block animate-pulse'
+              src='https://source.unsplash.com/random/100x100'
+              alt=''
+            />
+            <img
+              className='absolute top-[60%] left-[20%] rounded-full block animate-pulse'
+              src='https://source.unsplash.com/random/100x100'
+              alt=''
+            />
+            <img
+              className='absolute top-[20%] left-[60%] rounded-full block animate-pulse'
+              src='https://source.unsplash.com/random/100x100'
+              alt=''
+            />
+            <img
+              className='absolute bottom-0 right-0 rounded-full block animate-pulse'
+              src='https://source.unsplash.com/random/100x100'
+              alt=''
+            />
+          </div>
 
           <FaQuoteLeft className='-z-10 text-gray-200 inset-0 m-auto absolute text-[12.5rem]' />
         </div>
-        <div className='basis-7/12 px-3'>
+        <div className='basis-7/12 px-6'>
           <div className='outer mb-8'>
             <div className='stage'>
               <div className='item'>
