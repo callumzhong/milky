@@ -2,7 +2,7 @@ import Button from '@/components/Button';
 
 const Copywriting = () => {
   return (
-    <section className='py-12 mb-12 bg-fixed bg-[url("https://source.unsplash.com/random/1920x1080")]'>
+    <section className='py-12 my-12 bg-fixed bg-[url("https://source.unsplash.com/random/1920x1080")]'>
       <div className='container flex gap-6 py-12 text-white'>
         <div className='flex basis-6/12 gap-6'>
           <div className='basis-4/12'>

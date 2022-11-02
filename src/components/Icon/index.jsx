@@ -13,4 +13,5 @@ export { default as MdiTwitter } from './MdiTwitter';
 export { default as MdiYoutube } from './MdiYoutube';
 export { default as RiLinkedinFill } from './RiLinkedinFill';
 export { default as SimpleLineIconsMagnifier } from './SimpleLineIconsMagnifier';
+export { default as TablerAlertTriangle } from './TablerAlertTriangle';
 export { default as TypcnTick } from './TypcnTick';

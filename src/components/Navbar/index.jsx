@@ -7,8 +7,8 @@ const Navbar = () => {
       <nav className='ml-auto flex gap-9 text-[18px] font-medium'>
         <Link to='/'>Home</Link>
         <Link to='/about'>About</Link>
-        <Link to='/services'>Services</Link>
-        <Link to='/products'>Products</Link>
+        <Link to='/service'>Services</Link>
+        <Link to='/product'>Products</Link>
         <Link to='/contact'>Contact</Link>
       </nav>
       <button className='ml-6 border-l border-gray-500 pl-6'>

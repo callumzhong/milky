@@ -18,6 +18,10 @@ module.exports = {
       padding: '12px',
     },
     extend: {
+      backgroundImage: {
+        'hero-pattern':
+          "url('https://source.unsplash.com/random/1920x1080')",
+      },
       fontSize: {
         lg: '1.25rem',
         xl: '1.5rem',
@@ -90,7 +94,10 @@ module.exports = {
       keyframes: {
         pulse: {
           '0%, 100%': { transform: 'scaleX(1)' },
-          '50%': { transform: 'scale3d(1.05,1.05,1.05)' },
+          '50%': {
+            opacity: 1,
+            transform: 'scale3d(1.05,1.05,1.05)',
+          },
         },
       },
     },

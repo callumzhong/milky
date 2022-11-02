@@ -35,31 +35,43 @@
   h5 {
     font-size: theme(fontSize.lg);
   }
+  /* sticky footers start */
+  #root {
+    @apply min-h-screen flex flex-col;
+  }
+  #root > header,
+  #root > footer {
+    @apply flex-grow-0 flex-shrink-0;
+  }
+  #root > main {
+    @apply flex-grow;
+  }
+  /* sticky footers end */
 }
 @layer components {
   @media (min-width: theme(screens.sm)) {
     .container {
-      max-width: 540px;
+      max-width: 33.75rem;
     }
   }
   @media (min-width: theme(screens.md)) {
     .container {
-      max-width: 720px;
+      max-width: 45rem;
     }
   }
   @media (min-width: theme(screens.lg)) {
     .container {
-      max-width: 960px;
+      max-width: 60rem;
     }
   }
   @media (min-width: theme(screens.xl)) {
     .container {
-      max-width: 1140px;
+      max-width: 71.25rem;
     }
   }
   @media (min-width: theme(screens.2xl)) {
     .container {
-      max-width: 1320px;
+      max-width: 82.5rem;
     }
   }
 }

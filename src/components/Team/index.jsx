@@ -31,8 +31,11 @@ const Team = () => {
         </h2>
       </div>
       <div className='flex -mx-3'>
-        {data.map((item) => (
-          <div className='basis-1/3 px-3 text-center'>
+        {data.map((item, idx) => (
+          <div
+            key={idx}
+            className='basis-1/3 px-3 text-center'
+          >
             <Item
               banner={item.banner}
               job={item.job}
