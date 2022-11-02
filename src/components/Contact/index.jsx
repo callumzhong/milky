@@ -4,6 +4,7 @@ import {
   IcRoundEmail,
   MaterialSymbolsLocationOnRounded,
 } from '../Icon';
+import THEME from '../theme';
 import TitleSection from '../TitleSection';
 
 const Contact = () => {
@@ -13,13 +14,13 @@ const Contact = () => {
         <TitleSection icon='both' align='center'>
           CONTACT US
         </TitleSection>
-        <h2 className='text-4xl'>
+        <h2 className={THEME.h1}>
           If You Have Any Query, Please Contact Us
         </h2>
       </div>
       <div className='flex flex-wrap -mx-6'>
-        <div className='basis-full lg:basis-6/12 px-6'>
-          <h3 className='mb-6'>
+        <div className='basis-full lg:basis-6/12 px-6 mb-12 lg:mb-0'>
+          <h3 className={`${THEME.h3} mb-6`}>
             Need a functional contact form?
           </h3>
           <p className='mb-6'>
@@ -84,14 +85,16 @@ const Contact = () => {
           </form>
         </div>
         <div className='basis-full lg:basis-6/12 flex flex-col px-6'>
-          <h3 className='mb-6'>Contact Details</h3>
+          <h3 className={`mb-6 ${THEME.h3}`}>
+            Contact Details
+          </h3>
           <ul className='flex w-full flex-col'>
             <li className='flex py-4 border-b gap-5'>
               <div className='block rounded-full p-2 bg-confetti self-start'>
                 <MaterialSymbolsLocationOnRounded className='text-lg' />
               </div>
               <div className='flex flex-col gap-2'>
-                <h5>Our Office</h5>
+                <h5 className={THEME.h5}>Our Office</h5>
                 <p>123 Street, New York, USA</p>
               </div>
             </li>
@@ -100,7 +103,7 @@ const Contact = () => {
                 <IcBaselinePhone className='text-lg' />
               </div>
               <div className='flex flex-col gap-2'>
-                <h5>Call Us</h5>
+                <h5 className={THEME.h5}>Call Us</h5>
                 <p>+012 345 67890</p>
               </div>
             </li>
@@ -109,7 +112,7 @@ const Contact = () => {
                 <IcRoundEmail className='text-lg' />
               </div>
               <div className='flex flex-col gap-2'>
-                <h5>Mail Us</h5>
+                <h5 className={THEME.h5}>Mail Us</h5>
                 <p>info@example.com</p>
               </div>
             </li>

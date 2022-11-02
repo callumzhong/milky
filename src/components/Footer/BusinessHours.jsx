@@ -1,7 +1,11 @@
+import THEME from '../theme';
+
 const BusinessHours = () => {
   return (
     <>
-      <h5 className='text-white mb-6'>Business Hours</h5>
+      <h5 className={`text-white mb-6 ${THEME.h5}`}>
+        Business Hours
+      </h5>
       <ul>
         <li>
           <p className='mb-1'>Monday - Friday</p>

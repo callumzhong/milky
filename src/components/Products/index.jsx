@@ -1,4 +1,5 @@
 import TitleSection from '@/components/TitleSection';
+import THEME from '../theme';
 import Item from './Item';
 
 const data = [
@@ -30,18 +31,21 @@ const data = [
 
 const Products = () => {
   return (
-    <section className='container py-12'>
+    <section className={`py-12 ${THEME.container}`}>
       <div className='max-w-lg text-center mx-auto mb-12'>
         <TitleSection icon='both' align='center'>
           OUR PRODUCTS
         </TitleSection>
-        <h2 className='text-4xl'>
+        <h2 className={THEME.h1}>
           Our Dairy Products For Healthy Living
-        </h2> 
+        </h2>
       </div>
-      <div className='flex -mx-3'>
+      <div className='flex flex-wrap -mx-3 -mb-6'>
         {data.map((item) => (
-          <div key={item.name} className='basis-1/4 px-3'>
+          <div
+            key={item.name}
+            className='basis-full lg:basis-1/3 xl:basis-1/4 px-3 mb-6'
+          >
             <Item
               banner={item.banner}
               name={item.name}

@@ -1,4 +1,5 @@
 import TitleSection from '@/components/TitleSection';
+import THEME from '../theme';
 import Item from './Item';
 
 const data = [
@@ -21,18 +22,21 @@ const data = [
 
 const Services = () => {
   return (
-    <section className='py-12 container'>
+    <section className={`py-12 ${THEME.container}`}>
       <div className='max-w-lg text-center mx-auto mb-12'>
         <TitleSection icon='both' align='center'>
           OUR SERVICES
         </TitleSection>
-        <h2 className='text-4xl'>
+        <h2 className={THEME.h1}>
           Services That We Offer For Entrepreneurs
         </h2>
       </div>
       <div className='flex flex-wrap -mx-3 pt-20'>
         {data.map((item) => (
-          <div key={item.title} className='basis-1/3 px-3'>
+          <div
+            key={item.title}
+            className='basis-full mb-28 lg:mb-0 lg:basis-1/3 px-3'
+          >
             <Item
               banner={item.banner}
               title={item.title}

@@ -1,59 +1,61 @@
+import THEME from '../theme';
+
 const Album = () => {
   return (
-    <section className='container my-12 px-0'>
-      <div className='columns-1 md:columns-2 lg:columns-3 xl:columns-4 gap-0'>
-        <button>
+    <section className={`my-12 ${THEME['container-2xl']}`}>
+      <div className='md:columns-2 lg:columns-4 gap-0'>
+        <button className='block w-full md:w-auto'>
           <img
-            className='inline-block'
+            className='block max-w-none w-full md:max-w-full md:w-auto'
             src='https://source.unsplash.com/random/400x300'
             alt=''
           />
         </button>
-        <button>
+        <button className='block w-full md:w-auto'>
           <img
-            className='inline-block'
+            className='block max-w-none w-full md:max-w-full md:w-auto'
             src='https://source.unsplash.com/random/400x500'
             alt=''
           />
         </button>
-        <button>
+        <button className='block w-full md:w-auto'>
           <img
-            className='inline-block'
+            className='block max-w-none w-full md:max-w-full md:w-auto'
             src='https://source.unsplash.com/random/400x500'
             alt=''
           />
         </button>
-        <button>
+        <button className='block w-full md:w-auto'>
           <img
-            className='inline-block'
+            className='block max-w-none w-full md:max-w-full md:w-auto'
             src='https://source.unsplash.com/random/400x300'
             alt=''
           />
         </button>
-        <button>
+        <button className='block w-full md:w-auto'>
           <img
-            className='inline-block'
+            className='block max-w-none w-full md:max-w-full md:w-auto'
             src='https://source.unsplash.com/random/400x300'
             alt=''
           />
         </button>
-        <button>
+        <button className='block w-full md:w-auto'>
           <img
-            className='inline-block'
+            className='block max-w-none w-full md:max-w-full md:w-auto'
             src='https://source.unsplash.com/random/400x500'
             alt=''
           />
         </button>
-        <button>
+        <button className='block w-full md:w-auto'>
           <img
-            className='inline-block'
+            className='block max-w-none w-full md:max-w-full md:w-auto'
             src='https://source.unsplash.com/random/400x500'
             alt=''
           />
         </button>
-        <button>
+        <button className='block w-full md:w-auto'>
           <img
-            className='inline-block'
+            className='block max-w-none w-full md:max-w-full md:w-auto'
             src='https://source.unsplash.com/random/400x300'
             alt=''
           />

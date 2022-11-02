@@ -8,7 +8,7 @@ import {
 
 const TopBar = () => {
   return (
-    <div className='pl-12 flex items-center bg-lunar-green '>
+    <div className='pl-12 hidden lg:flex items-center bg-lunar-green '>
       <div className='flex items-center gap-4 text-white'>
         <span className=''>Follow Us: </span>
         <a href='' className='text-xl'>

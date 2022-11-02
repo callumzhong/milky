@@ -1,10 +1,11 @@
 import Button from '@/components/Button';
 import { TypcnTick } from '@/components/Icon';
+import THEME from '../theme';
 
 const Description = () => {
   return (
     <>
-      <h2 className='text-4xl mb-6'>
+      <h2 className={`${THEME.h1} mb-6`}>
         Few Reasons Why People Choosing Us!
       </h2>
       <p className='mb-6'>
@@ -13,7 +14,7 @@ const Description = () => {
         ipsum et lorem et sit, sed stet lorem sit clita duo
         justo magna dolore erat amet
       </p>
-      <ul className='mb-6 flex flex-col gap-3'>
+      <ul className='mb-8 flex flex-col gap-3'>
         <li className='flex items-center'>
           <TypcnTick className='text-2xl text-hippie-green mr-4' />
           Justo magna erat amet

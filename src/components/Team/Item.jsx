@@ -5,6 +5,7 @@ import {
   MdiInstagram,
   MdiTwitter,
 } from '../Icon';
+import THEME from '../theme';
 
 const Item = ({ banner, name, job }) => {
   return (
@@ -14,7 +15,7 @@ const Item = ({ banner, name, job }) => {
         src={banner}
         alt=''
       />
-      <h5 className='mb-2'>{name}</h5>
+      <h5 className={`mb-2 ${THEME.h5}`}>{name}</h5>
       <p className='text-hippie-green mb-4'>{job}</p>
       <div className='flex gap-2 w-max mx-auto'>
         <Link className='ease-in-out duration-500 hover:bg-confetti hover:text-inherit rounded-full text-lg p-2 shadow-[0_0_45px_rgba(0,0,0,0.20)] text-confetti'>

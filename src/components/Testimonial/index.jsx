@@ -3,22 +3,23 @@ import {
   CarbonChevronRight,
   FaQuoteLeft,
 } from '../Icon';
+import THEME from '../theme';
 import TitleSection from '../TitleSection';
 
 const Testimonial = () => {
   return (
-    <section className='container py-12 mb-12'>
+    <section className={`py-12 mb-12 ${THEME.container}`}>
       <div className='max-w-lg text-center mx-auto mb-12'>
         <TitleSection icon='both' align='center'>
           TESTIMONIAL
         </TitleSection>
-        <h2 className='text-4xl'>
+        <h2 className={THEME.h1}>
           What People Say About Our Dairy Farm
         </h2>
       </div>
-      <div className='flex -mx-6'>
-        <div className='relative basis-5/12 px-6'>
-          <div className='relative h-full w-full'>
+      <div className='flex flex-wrap -mx-6'>
+        <div className='relative basis-full lg:basis-5/12 px-6'>
+          <div className='relative min-h-[400px] h-full w-full'>
             <img
               className='absolute top-0 left-0 rounded-full block animate-pulse'
               src='https://source.unsplash.com/random/100x100'
@@ -43,7 +44,7 @@ const Testimonial = () => {
 
           <FaQuoteLeft className='-z-10 text-gray-200 inset-0 m-auto absolute text-[12.5rem]' />
         </div>
-        <div className='basis-7/12 px-6'>
+        <div className='basis-full mt-12 lg:mt-0 lg:basis-7/12 px-6'>
           <div className='outer mb-8'>
             <div className='stage'>
               <div className='item'>
@@ -52,13 +53,15 @@ const Testimonial = () => {
                   src='https://source.unsplash.com/random/100x100'
                   alt=''
                 />
-                <p className='mb-4 text-lg'>
+                <p className={`mb-4 ${THEME.h5}`}>
                   Dolores sed duo clita tempor justo dolor
                   et stet lorem kasd labore dolore lorem
                   ipsum. At lorem lorem magna ut et, nonumy
                   et labore et tempor diam tempor erat.
                 </p>
-                <h5 className='mb-2'>Client Name</h5>
+                <h5 className={`mb-2 ${THEME.h5}`}>
+                  Client Name
+                </h5>
                 <p className='text-hippie-green'>
                   Profession
                 </p>

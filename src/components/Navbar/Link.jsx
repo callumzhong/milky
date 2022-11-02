@@ -4,14 +4,13 @@ const Link = ({ children, to }) => {
   return (
     <NavLink
       to={to}
-      className={({ isActive }) =>
-        clsx(
-          'py-6 text-lunar-green hover:text-hippie-green',
-          {
-            'text-hippie-green': isActive,
-          },
-        )
-      }
+      className={({ isActive }) => {
+        console.log(isActive, to);
+        return clsx('py-6 hover:text-hippie-green', {
+          'text-hippie-green': isActive,
+          'text-lunar-green ': !isActive,
+        });
+      }}
       end={to === '/' ? true : false}
     >
       {children}
