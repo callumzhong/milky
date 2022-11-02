@@ -5,6 +5,7 @@ const Breadcrumb = ({ data }) => {
     <ul className='flex justify-center text-[1.125rem]'>
       {data.map((item, idx) => (
         <li
+          key={item.name}
           className={clsx({
             'before:content-["/"] before:inline-block before:px-2':
               0 < idx,

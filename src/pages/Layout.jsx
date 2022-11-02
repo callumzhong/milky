@@ -3,8 +3,7 @@ import Footer from '@/components/Footer';
 import Navbar from '@/components/Navbar';
 import TopBar from '@/components/TopBar';
 import { Outlet } from 'react-router-dom';
-const Layout = ({ children, ...props }) => {
-  console.log(children, props);
+const Layout = ({ children }) => {
   return (
     <>
       <header>

@@ -32,6 +32,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["@types/react", "npm:18.0.21"],\
             ["@types/react-dom", "npm:18.0.6"],\
             ["@vitejs/plugin-react", "virtual:4dcbb5f5a1da82e85b1ad88670a9fb01c88ffcd0951a233825e4630d632759e69f364f05c8a0d6b30183e3f263958bc0a868467605c5a6a5b4d61c7f7630aff6#npm:2.1.0"],\
+            ["aos", "npm:2.3.4"],\
             ["autoprefixer", "virtual:4dcbb5f5a1da82e85b1ad88670a9fb01c88ffcd0951a233825e4630d632759e69f364f05c8a0d6b30183e3f263958bc0a868467605c5a6a5b4d61c7f7630aff6#npm:10.4.12"],\
             ["clsx", "npm:1.2.1"],\
             ["eslint", "npm:8.26.0"],\
@@ -929,6 +930,18 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
           "linkType": "HARD"\
         }]\
       ]],\
+      ["aos", [\
+        ["npm:2.3.4", {\
+          "packageLocation": "./.yarn/cache/aos-npm-2.3.4-40ac384fbe-42f823777e.zip/node_modules/aos/",\
+          "packageDependencies": [\
+            ["aos", "npm:2.3.4"],\
+            ["classlist-polyfill", "npm:1.2.0"],\
+            ["lodash.debounce", "npm:4.0.8"],\
+            ["lodash.throttle", "npm:4.1.1"]\
+          ],\
+          "linkType": "HARD"\
+        }]\
+      ]],\
       ["aproba", [\
         ["npm:2.0.0", {\
           "packageLocation": "./.yarn/cache/aproba-npm-2.0.0-8716bcfde6-5615cadcfb.zip/node_modules/aproba/",\
@@ -1197,6 +1210,15 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
           "packageLocation": "./.yarn/cache/chownr-npm-2.0.0-638f1c9c61-c57cf9dd07.zip/node_modules/chownr/",\
           "packageDependencies": [\
             ["chownr", "npm:2.0.0"]\
+          ],\
+          "linkType": "HARD"\
+        }]\
+      ]],\
+      ["classlist-polyfill", [\
+        ["npm:1.2.0", {\
+          "packageLocation": "./.yarn/cache/classlist-polyfill-npm-1.2.0-e5d1976a47-43ff10af5e.zip/node_modules/classlist-polyfill/",\
+          "packageDependencies": [\
+            ["classlist-polyfill", "npm:1.2.0"]\
           ],\
           "linkType": "HARD"\
         }]\
@@ -2859,11 +2881,29 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
           "linkType": "HARD"\
         }]\
       ]],\
+      ["lodash.debounce", [\
+        ["npm:4.0.8", {\
+          "packageLocation": "./.yarn/cache/lodash.debounce-npm-4.0.8-f1d6e09799-a3f527d22c.zip/node_modules/lodash.debounce/",\
+          "packageDependencies": [\
+            ["lodash.debounce", "npm:4.0.8"]\
+          ],\
+          "linkType": "HARD"\
+        }]\
+      ]],\
       ["lodash.merge", [\
         ["npm:4.6.2", {\
           "packageLocation": "./.yarn/cache/lodash.merge-npm-4.6.2-77cb4416bf-ad580b4bdb.zip/node_modules/lodash.merge/",\
           "packageDependencies": [\
             ["lodash.merge", "npm:4.6.2"]\
+          ],\
+          "linkType": "HARD"\
+        }]\
+      ]],\
+      ["lodash.throttle", [\
+        ["npm:4.1.1", {\
+          "packageLocation": "./.yarn/cache/lodash.throttle-npm-4.1.1-856641af92-129c0a28ce.zip/node_modules/lodash.throttle/",\
+          "packageDependencies": [\
+            ["lodash.throttle", "npm:4.1.1"]\
           ],\
           "linkType": "HARD"\
         }]\
@@ -2959,6 +2999,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["@types/react", "npm:18.0.21"],\
             ["@types/react-dom", "npm:18.0.6"],\
             ["@vitejs/plugin-react", "virtual:4dcbb5f5a1da82e85b1ad88670a9fb01c88ffcd0951a233825e4630d632759e69f364f05c8a0d6b30183e3f263958bc0a868467605c5a6a5b4d61c7f7630aff6#npm:2.1.0"],\
+            ["aos", "npm:2.3.4"],\
             ["autoprefixer", "virtual:4dcbb5f5a1da82e85b1ad88670a9fb01c88ffcd0951a233825e4630d632759e69f364f05c8a0d6b30183e3f263958bc0a868467605c5a6a5b4d61c7f7630aff6#npm:10.4.12"],\
             ["clsx", "npm:1.2.1"],\
             ["eslint", "npm:8.26.0"],\
