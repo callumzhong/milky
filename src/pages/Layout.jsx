@@ -6,12 +6,10 @@ import { Outlet } from 'react-router-dom';
 const Layout = ({ children }) => {
   return (
     <>
-      <header>
-        <TopBar />
-        <Navbar />
-      </header>
+      <TopBar />
+      <Navbar />
       <main>{children || <Outlet />}</main>
-      <footer className='bg-lunar-green mt-12 pt-12'>
+      <footer className='flex-grow-0 flex-shrink-0 bg-lunar-green mt-12 pt-12'>
         <Footer />
         <Copyright />
       </footer>

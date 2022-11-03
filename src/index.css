@@ -26,8 +26,8 @@
   #root {
     @apply min-h-screen flex flex-col;
   }
-  #root > header,
-  #root > footer {
+  #root .root__header,
+  #root .root__footer {
     @apply flex-grow-0 flex-shrink-0;
   }
   #root > main {

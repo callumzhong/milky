@@ -5,8 +5,7 @@ const Link = ({ children, to }) => {
     <NavLink
       to={to}
       className={({ isActive }) => {
-        console.log(isActive, to);
-        return clsx('py-6 hover:text-hippie-green', {
+        return clsx('hover:text-hippie-green', {
           'text-hippie-green': isActive,
           'text-lunar-green ': !isActive,
         });
