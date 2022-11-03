@@ -1,0 +1,16 @@
+@property --num {
+  syntax: '<integer>';
+  initial-value: 0;
+  inherits: false;
+}
+
+.number {
+  transition: --num var(--sec);
+  counter-reset: num var(--num);
+}
+
+.number::after {
+  content: counter(num);
+  @apply text-[calc(1.375rem+1.5vw)] xl:text-4xl;
+  color: inherit;
+}

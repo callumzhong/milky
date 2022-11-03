@@ -3,6 +3,7 @@ import {
   MaterialSymbolsGardenCartOutline,
 } from '@/components/Icon';
 import { Link } from 'react-router-dom';
+import THEME from '../theme';
 
 function financial(x) {
   return Number.parseFloat(x).toFixed(2);
@@ -28,7 +29,7 @@ const Item = ({
         <img src={banner} alt={name} />
       </div>
       <div className='py-4 text-center'>
-        <h5 className='mb-4'>{name}</h5>
+        <h5 className={`mb-4 ${THEME.h5}`}>{name}</h5>
         <span className='pr-2 text-hippie-green'>
           ${financial(specialPrice)}
         </span>

@@ -23,9 +23,9 @@ const TitleSection = ({
           <div className='absolute bottom-[5px] inset-x-0 h-[2px] bg-hippie-green'></div>
         </div>
       )}
-      <h5 className='font-body text-hippie-green font-semibold uppercase'>
+      <h6 className='font-body text-hippie-green font-semibold uppercase'>
         {children}
-      </h5>
+      </h6>
       {(icon === 'right' || icon === 'both') && (
         <div className='w-[60px] relative'>
           <div className='absolute top-[2px] w-2/3 h-[2px] bg-hippie-green'></div>

@@ -5,13 +5,26 @@ import {
   RouterProvider,
 } from 'react-router-dom';
 import * as icons from './components/Icon';
-import HomePage from './pages/Home';
+import AboutPage from './pages/AboutPage';
+import ContactPage from './pages/ContactPage';
+import ErrorPage from './pages/ErrorPage';
+import HomePage from './pages/HomePage';
 import Layout from './pages/Layout';
+import ProductPage from './pages/ProductPage';
+import ServicePage from './pages/ServicePage';
 const router = createBrowserRouter(
   createRoutesFromElements(
     <>
-      <Route path='/' element={<Layout />}>
+      <Route
+        path='/'
+        element={<Layout />}
+        errorElement={<ErrorPage />}
+      >
         <Route index element={<HomePage />} />
+        <Route path='about' element={<AboutPage />} />
+        <Route path='service' element={<ServicePage />} />
+        <Route path='product' element={<ProductPage />} />
+        <Route path='contact' element={<ContactPage />} />
       </Route>
 
       {process.env.NODE_ENV === 'development' && (
