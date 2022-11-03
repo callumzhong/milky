@@ -5,10 +5,12 @@ import {
 import clsx from 'clsx';
 import { useEffect, useState } from 'react';
 import useCollapse from 'react-collapsed';
+import { useLocation } from 'react-router-dom';
 import THEME from '../theme';
 import Link from './Link';
 
 const Navbar = () => {
+  const location = useLocation();
   const [isExpanded, setExpanded] = useState(false);
   const { getCollapseProps, getToggleProps } = useCollapse({
     isExpanded,
@@ -17,21 +19,30 @@ const Navbar = () => {
   const [isOpenAnimationScroll, setIsOpenAnimationScroll] =
     useState(false);
 
+  // resize Navbar
   useEffect(() => {
     const callback = (e) => {
-      console.log(window.innerWidth);
       if (window.innerWidth <= 992) {
         setExpanded(false);
       } else {
         setExpanded(true);
       }
     };
+    callback();
     window.addEventListener('resize', callback, false);
     return () => {
       window.removeEventListener('resize', callback);
     };
-  });
+  }, []);
 
+  // location effect
+  useEffect(() => {
+    if (window.innerWidth <= 992) {
+      setExpanded(false);
+    }
+  }, [location]);
+
+  // scroll Top
   useEffect(() => {
     const scrollCallback = (e) => {
       const value = document.documentElement.scrollTop;

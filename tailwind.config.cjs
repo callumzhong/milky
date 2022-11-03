@@ -90,6 +90,7 @@ module.exports = {
       },
       animation: {
         pulse: 'pulse 1s both infinite',
+        slideInRight: 'slideInRight 1s both',
       },
       keyframes: {
         pulse: {
@@ -97,6 +98,16 @@ module.exports = {
           '50%': {
             opacity: 1,
             transform: 'scale3d(1.05,1.05,1.05)',
+          },
+        },
+        slideInRight: {
+          '0%': {
+            transform: 'translate3d(100%,0,0)',
+            visibility: 'visible',
+          },
+          '100%': {
+            opacity: 1,
+            transform: 'translateZ(0)',
           },
         },
       },

@@ -46,6 +46,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["react-hook-form", "virtual:4dcbb5f5a1da82e85b1ad88670a9fb01c88ffcd0951a233825e4630d632759e69f364f05c8a0d6b30183e3f263958bc0a868467605c5a6a5b4d61c7f7630aff6#npm:7.37.0"],\
             ["react-modal", "virtual:4dcbb5f5a1da82e85b1ad88670a9fb01c88ffcd0951a233825e4630d632759e69f364f05c8a0d6b30183e3f263958bc0a868467605c5a6a5b4d61c7f7630aff6#npm:3.15.1"],\
             ["react-router-dom", "virtual:4dcbb5f5a1da82e85b1ad88670a9fb01c88ffcd0951a233825e4630d632759e69f364f05c8a0d6b30183e3f263958bc0a868467605c5a6a5b4d61c7f7630aff6#npm:6.4.2"],\
+            ["swiper", "npm:8.4.4"],\
             ["tailwindcss", "virtual:4dcbb5f5a1da82e85b1ad88670a9fb01c88ffcd0951a233825e4630d632759e69f364f05c8a0d6b30183e3f263958bc0a868467605c5a6a5b4d61c7f7630aff6#npm:3.1.8"],\
             ["vite", "virtual:4dcbb5f5a1da82e85b1ad88670a9fb01c88ffcd0951a233825e4630d632759e69f364f05c8a0d6b30183e3f263958bc0a868467605c5a6a5b4d61c7f7630aff6#npm:3.1.8"],\
             ["yup", "npm:0.32.11"]\
@@ -1456,6 +1457,16 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
           "packageDependencies": [\
             ["doctrine", "npm:3.0.0"],\
             ["esutils", "npm:2.0.3"]\
+          ],\
+          "linkType": "HARD"\
+        }]\
+      ]],\
+      ["dom7", [\
+        ["npm:4.0.4", {\
+          "packageLocation": "./.yarn/cache/dom7-npm-4.0.4-637bc4420a-b38604f74e.zip/node_modules/dom7/",\
+          "packageDependencies": [\
+            ["dom7", "npm:4.0.4"],\
+            ["ssr-window", "npm:4.0.2"]\
           ],\
           "linkType": "HARD"\
         }]\
@@ -3014,6 +3025,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["react-hook-form", "virtual:4dcbb5f5a1da82e85b1ad88670a9fb01c88ffcd0951a233825e4630d632759e69f364f05c8a0d6b30183e3f263958bc0a868467605c5a6a5b4d61c7f7630aff6#npm:7.37.0"],\
             ["react-modal", "virtual:4dcbb5f5a1da82e85b1ad88670a9fb01c88ffcd0951a233825e4630d632759e69f364f05c8a0d6b30183e3f263958bc0a868467605c5a6a5b4d61c7f7630aff6#npm:3.15.1"],\
             ["react-router-dom", "virtual:4dcbb5f5a1da82e85b1ad88670a9fb01c88ffcd0951a233825e4630d632759e69f364f05c8a0d6b30183e3f263958bc0a868467605c5a6a5b4d61c7f7630aff6#npm:6.4.2"],\
+            ["swiper", "npm:8.4.4"],\
             ["tailwindcss", "virtual:4dcbb5f5a1da82e85b1ad88670a9fb01c88ffcd0951a233825e4630d632759e69f364f05c8a0d6b30183e3f263958bc0a868467605c5a6a5b4d61c7f7630aff6#npm:3.1.8"],\
             ["vite", "virtual:4dcbb5f5a1da82e85b1ad88670a9fb01c88ffcd0951a233825e4630d632759e69f364f05c8a0d6b30183e3f263958bc0a868467605c5a6a5b4d61c7f7630aff6#npm:3.1.8"],\
             ["yup", "npm:0.32.11"]\
@@ -4195,6 +4207,15 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
           "linkType": "HARD"\
         }]\
       ]],\
+      ["ssr-window", [\
+        ["npm:4.0.2", {\
+          "packageLocation": "./.yarn/cache/ssr-window-npm-4.0.2-01f9c0151e-df18260092.zip/node_modules/ssr-window/",\
+          "packageDependencies": [\
+            ["ssr-window", "npm:4.0.2"]\
+          ],\
+          "linkType": "HARD"\
+        }]\
+      ]],\
       ["ssri", [\
         ["npm:9.0.1", {\
           "packageLocation": "./.yarn/cache/ssri-npm-9.0.1-33ce27f4f8-fb58f5e46b.zip/node_modules/ssri/",\
@@ -4310,6 +4331,17 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
           "packageLocation": "./.yarn/cache/supports-preserve-symlinks-flag-npm-1.0.0-f17c4d0028-53b1e247e6.zip/node_modules/supports-preserve-symlinks-flag/",\
           "packageDependencies": [\
             ["supports-preserve-symlinks-flag", "npm:1.0.0"]\
+          ],\
+          "linkType": "HARD"\
+        }]\
+      ]],\
+      ["swiper", [\
+        ["npm:8.4.4", {\
+          "packageLocation": "./.yarn/unplugged/swiper-npm-8.4.4-c63bd6daca/node_modules/swiper/",\
+          "packageDependencies": [\
+            ["swiper", "npm:8.4.4"],\
+            ["dom7", "npm:4.0.4"],\
+            ["ssr-window", "npm:4.0.2"]\
           ],\
           "linkType": "HARD"\
         }]\
