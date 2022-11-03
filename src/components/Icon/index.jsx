@@ -8,6 +8,7 @@ export { default as IcRoundEmail } from './IcRoundEmail';
 export { default as IonSocialFacebook } from './IonSocialFacebook';
 export { default as MaterialSymbolsGardenCartOutline } from './MaterialSymbolsGardenCartOutline';
 export { default as MaterialSymbolsLocationOnRounded } from './MaterialSymbolsLocationOnRounded';
+export { default as MaterialSymbolsMenu } from './MaterialSymbolsMenu';
 export { default as MdiInstagram } from './MdiInstagram';
 export { default as MdiTwitter } from './MdiTwitter';
 export { default as MdiYoutube } from './MdiYoutube';

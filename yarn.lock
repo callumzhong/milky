@@ -2515,6 +2515,7 @@ __metadata:
     eslint-plugin-react: latest
     postcss: ^8.4.18
     react: ^18.2.0
+    react-collapsed: ^3.5.0
     react-dom: ^18.2.0
     react-hook-form: ^7.37.0
     react-modal: ^3.15.1
@@ -3081,6 +3082,18 @@ __metadata:
   languageName: node
   linkType: hard
 
+"react-collapsed@npm:^3.5.0":
+  version: 3.5.0
+  resolution: "react-collapsed@npm:3.5.0"
+  dependencies:
+    tiny-warning: ^1.0.3
+  peerDependencies:
+    react: ">=16.8"
+    react-dom: ">=16.8"
+  checksum: 0cbf8c3f807340627c99728a317b91763377b90688cd0908eb6a98c2a4daaaba214bffa63fd12d9f4bd42fea4f2e9e36ca6aff28387952e0546dddcc7786607f
+  languageName: node
+  linkType: hard
+
 "react-dom@npm:^18.2.0":
   version: 18.2.0
   resolution: "react-dom@npm:18.2.0"
@@ -3630,6 +3643,13 @@ __metadata:
   version: 0.2.0
   resolution: "text-table@npm:0.2.0"
   checksum: b6937a38c80c7f84d9c11dd75e49d5c44f71d95e810a3250bd1f1797fc7117c57698204adf676b71497acc205d769d65c16ae8fa10afad832ae1322630aef10a
+  languageName: node
+  linkType: hard
+
+"tiny-warning@npm:^1.0.3":
+  version: 1.0.3
+  resolution: "tiny-warning@npm:1.0.3"
+  checksum: da62c4acac565902f0624b123eed6dd3509bc9a8d30c06e017104bedcf5d35810da8ff72864400ad19c5c7806fc0a8323c68baf3e326af7cb7d969f846100d71
   languageName: node
   linkType: hard
 

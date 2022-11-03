@@ -41,6 +41,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["eslint-plugin-react", "virtual:4dcbb5f5a1da82e85b1ad88670a9fb01c88ffcd0951a233825e4630d632759e69f364f05c8a0d6b30183e3f263958bc0a868467605c5a6a5b4d61c7f7630aff6#npm:7.31.10"],\
             ["postcss", "npm:8.4.18"],\
             ["react", "npm:18.2.0"],\
+            ["react-collapsed", "virtual:4dcbb5f5a1da82e85b1ad88670a9fb01c88ffcd0951a233825e4630d632759e69f364f05c8a0d6b30183e3f263958bc0a868467605c5a6a5b4d61c7f7630aff6#npm:3.5.0"],\
             ["react-dom", "virtual:4dcbb5f5a1da82e85b1ad88670a9fb01c88ffcd0951a233825e4630d632759e69f364f05c8a0d6b30183e3f263958bc0a868467605c5a6a5b4d61c7f7630aff6#npm:18.2.0"],\
             ["react-hook-form", "virtual:4dcbb5f5a1da82e85b1ad88670a9fb01c88ffcd0951a233825e4630d632759e69f364f05c8a0d6b30183e3f263958bc0a868467605c5a6a5b4d61c7f7630aff6#npm:7.37.0"],\
             ["react-modal", "virtual:4dcbb5f5a1da82e85b1ad88670a9fb01c88ffcd0951a233825e4630d632759e69f364f05c8a0d6b30183e3f263958bc0a868467605c5a6a5b4d61c7f7630aff6#npm:3.15.1"],\
@@ -3008,6 +3009,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["eslint-plugin-react", "virtual:4dcbb5f5a1da82e85b1ad88670a9fb01c88ffcd0951a233825e4630d632759e69f364f05c8a0d6b30183e3f263958bc0a868467605c5a6a5b4d61c7f7630aff6#npm:7.31.10"],\
             ["postcss", "npm:8.4.18"],\
             ["react", "npm:18.2.0"],\
+            ["react-collapsed", "virtual:4dcbb5f5a1da82e85b1ad88670a9fb01c88ffcd0951a233825e4630d632759e69f364f05c8a0d6b30183e3f263958bc0a868467605c5a6a5b4d61c7f7630aff6#npm:3.5.0"],\
             ["react-dom", "virtual:4dcbb5f5a1da82e85b1ad88670a9fb01c88ffcd0951a233825e4630d632759e69f364f05c8a0d6b30183e3f263958bc0a868467605c5a6a5b4d61c7f7630aff6#npm:18.2.0"],\
             ["react-hook-form", "virtual:4dcbb5f5a1da82e85b1ad88670a9fb01c88ffcd0951a233825e4630d632759e69f364f05c8a0d6b30183e3f263958bc0a868467605c5a6a5b4d61c7f7630aff6#npm:7.37.0"],\
             ["react-modal", "virtual:4dcbb5f5a1da82e85b1ad88670a9fb01c88ffcd0951a233825e4630d632759e69f364f05c8a0d6b30183e3f263958bc0a868467605c5a6a5b4d61c7f7630aff6#npm:3.15.1"],\
@@ -3715,6 +3717,33 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
           "linkType": "HARD"\
         }]\
       ]],\
+      ["react-collapsed", [\
+        ["npm:3.5.0", {\
+          "packageLocation": "./.yarn/cache/react-collapsed-npm-3.5.0-741c4924ea-0cbf8c3f80.zip/node_modules/react-collapsed/",\
+          "packageDependencies": [\
+            ["react-collapsed", "npm:3.5.0"]\
+          ],\
+          "linkType": "SOFT"\
+        }],\
+        ["virtual:4dcbb5f5a1da82e85b1ad88670a9fb01c88ffcd0951a233825e4630d632759e69f364f05c8a0d6b30183e3f263958bc0a868467605c5a6a5b4d61c7f7630aff6#npm:3.5.0", {\
+          "packageLocation": "./.yarn/__virtual__/react-collapsed-virtual-c1682c2260/0/cache/react-collapsed-npm-3.5.0-741c4924ea-0cbf8c3f80.zip/node_modules/react-collapsed/",\
+          "packageDependencies": [\
+            ["react-collapsed", "virtual:4dcbb5f5a1da82e85b1ad88670a9fb01c88ffcd0951a233825e4630d632759e69f364f05c8a0d6b30183e3f263958bc0a868467605c5a6a5b4d61c7f7630aff6#npm:3.5.0"],\
+            ["@types/react", "npm:18.0.21"],\
+            ["@types/react-dom", "npm:18.0.6"],\
+            ["react", "npm:18.2.0"],\
+            ["react-dom", "virtual:4dcbb5f5a1da82e85b1ad88670a9fb01c88ffcd0951a233825e4630d632759e69f364f05c8a0d6b30183e3f263958bc0a868467605c5a6a5b4d61c7f7630aff6#npm:18.2.0"],\
+            ["tiny-warning", "npm:1.0.3"]\
+          ],\
+          "packagePeers": [\
+            "@types/react-dom",\
+            "@types/react",\
+            "react-dom",\
+            "react"\
+          ],\
+          "linkType": "HARD"\
+        }]\
+      ]],\
       ["react-dom", [\
         ["npm:18.2.0", {\
           "packageLocation": "./.yarn/cache/react-dom-npm-18.2.0-dd675bca1c-7d323310be.zip/node_modules/react-dom/",\
@@ -4348,6 +4377,15 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
           "packageLocation": "./.yarn/cache/text-table-npm-0.2.0-d92a778b59-b6937a38c8.zip/node_modules/text-table/",\
           "packageDependencies": [\
             ["text-table", "npm:0.2.0"]\
+          ],\
+          "linkType": "HARD"\
+        }]\
+      ]],\
+      ["tiny-warning", [\
+        ["npm:1.0.3", {\
+          "packageLocation": "./.yarn/cache/tiny-warning-npm-1.0.3-750b7a07c4-da62c4acac.zip/node_modules/tiny-warning/",\
+          "packageDependencies": [\
+            ["tiny-warning", "npm:1.0.3"]\
           ],\
           "linkType": "HARD"\
         }]\
