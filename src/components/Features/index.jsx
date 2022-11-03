@@ -1,10 +1,40 @@
 import TitleSection from '@/components/TitleSection';
+import { useEffect, useRef, useState } from 'react';
+import AnimatingNumber from '../AnimatingNumber';
 import THEME from '../theme';
 import Description from './Description';
 
 const Features = () => {
+  const sectionRef = useRef(null);
+  const [isIntersecting, setIsIntersecting] =
+    useState(false);
+
+  useEffect(() => {
+    const observerCallback = (entries) => {
+      entries.forEach((entry) => {
+        setIsIntersecting(entry.isIntersecting);
+      });
+    };
+    const observer = new IntersectionObserver(
+      observerCallback,
+      {
+        root: null,
+        rootMargin: '0px 0px 0px 0px',
+        threshold: 0.5,
+      },
+    );
+    observer.observe(sectionRef.current);
+    return () => {
+      observer.unobserve(sectionRef.current);
+    };
+  }, []);
+
   return (
-    <section className={`py-12 ${THEME.container}`}>
+    <section
+      ref={sectionRef}
+      data-aos='fade-up'
+      className={`py-12 ${THEME.container}`}
+    >
       <div className='flex flex-wrap -mx-6'>
         <div className='basis-full lg:basis-1/2 px-6 mb-12'>
           <TitleSection>WHY US!</TitleSection>
@@ -18,10 +48,12 @@ const Features = () => {
                 src='https://technext.github.io/milky/img/experience.png'
                 alt=''
               />
-              <h5 className={`${THEME.h1} mb-2 text-white`}>
-                25
-              </h5>
-              <p className=' text-lg text-confetti'>
+              <AnimatingNumber
+                color='white'
+                number={25}
+                isIntersecting={isIntersecting}
+              />
+              <p className='mt-2 text-lg text-confetti'>
                 Years Experience
               </p>
             </div>
@@ -31,8 +63,12 @@ const Features = () => {
                 src='https://technext.github.io/milky/img/award.png'
                 alt=''
               />
-              <h5 className={`${THEME.h1} mb-2`}>183</h5>
-              <p className=' text-lg text-hippie-green font-medium'>
+              <AnimatingNumber
+                color='dark'
+                number={183}
+                isIntersecting={isIntersecting}
+              />
+              <p className=' text-lg mt-2 text-hippie-green font-medium'>
                 Award Winning
               </p>
             </div>
@@ -44,8 +80,12 @@ const Features = () => {
                 src='https://technext.github.io/milky/img/animal.png'
                 alt=''
               />
-              <h5 className={`${THEME.h1} mb-2`}>2619</h5>
-              <p className=' text-lg text-hippie-green'>
+              <AnimatingNumber
+                color='dark'
+                number={2619}
+                isIntersecting={isIntersecting}
+              />
+              <p className=' text-lg mt-2 text-hippie-green'>
                 Total Animals
               </p>
             </div>
@@ -55,9 +95,11 @@ const Features = () => {
                 src='https://technext.github.io/milky/img/client.png'
                 alt=''
               />
-              <h5 className={`${THEME.h1} mb-2 text-white`}>
-                51940
-              </h5>
+              <AnimatingNumber
+                color='white'
+                number={51940}
+                isIntersecting={isIntersecting}
+              />
               <p className='text-lg text-confetti font-medium'>
                 Happy Clients
               </p>

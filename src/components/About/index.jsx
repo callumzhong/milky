@@ -1,10 +1,12 @@
 import TitleSection from '@/components/TitleSection';
 import THEME from '../theme';
 import Description from './Description';
-
 const About = () => {
   return (
-    <section className={`py-12 ${THEME.container}`}>
+    <section
+      data-aos='fade-up'
+      className={`py-12 ${THEME.container}`}
+    >
       <div className='flex flex-wrap -mx-6'>
         <div className='columns-2 basis-full lg:basis-1/2 gap-2 self-end lg:self-start -mb-2 px-6'>
           <div className='relative'>

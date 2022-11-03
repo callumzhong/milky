@@ -11,7 +11,10 @@ import TitleSection from '../TitleSection';
 const Testimonial = () => {
   return (
     <section className={`py-12 mb-12 ${THEME.container}`}>
-      <div className='max-w-lg text-center mx-auto mb-12'>
+      <div
+        data-aos='fade-up'
+        className='max-w-lg text-center mx-auto mb-12'
+      >
         <TitleSection icon='both' align='center'>
           TESTIMONIAL
         </TitleSection>
@@ -19,7 +22,10 @@ const Testimonial = () => {
           What People Say About Our Dairy Farm
         </h2>
       </div>
-      <div className='flex flex-wrap -mx-6'>
+      <div
+        data-aos='fade-up'
+        className='flex flex-wrap -mx-6'
+      >
         <div className='relative w-full lg:w-5/12 px-6'>
           <div className='relative min-h-[400px] h-full w-full'>
             <img

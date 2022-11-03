@@ -34,6 +34,9 @@ const Team = () => {
       <div className='flex flex-wrap -mx-3'>
         {data.map((item, idx) => (
           <div
+            data-aos='fade-up'
+            data-aos-duration='500'
+            data-aos-delay={250 + idx * 500}
             key={idx}
             className='basis-full lg:basis-1/3 px-3 text-center'
           >

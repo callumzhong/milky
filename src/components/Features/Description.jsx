@@ -1,5 +1,6 @@
 import Button from '@/components/Button';
 import { TypcnTick } from '@/components/Icon';
+import AnimatingNumber from '../AnimatingNumber';
 import THEME from '../theme';
 
 const Description = () => {
@@ -29,6 +30,8 @@ const Description = () => {
         </li>
       </ul>
       <Button>Explore More</Button>
+
+      <AnimatingNumber number={99999} />
     </>
   );
 };

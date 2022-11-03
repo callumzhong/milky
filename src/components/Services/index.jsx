@@ -23,7 +23,10 @@ const data = [
 const Services = () => {
   return (
     <section className={`py-12 ${THEME.container}`}>
-      <div className='max-w-lg text-center mx-auto mb-12'>
+      <div
+        data-aos='fade-up'
+        className='max-w-lg text-center mx-auto mb-12'
+      >
         <TitleSection icon='both' align='center'>
           OUR SERVICES
         </TitleSection>
@@ -32,8 +35,10 @@ const Services = () => {
         </h2>
       </div>
       <div className='flex flex-wrap -mx-3 pt-20'>
-        {data.map((item) => (
+        {data.map((item, idx) => (
           <div
+            data-aos='fade-up'
+            data-aos-delay={250 + idx * 500}
             key={item.title}
             className='basis-full mb-28 lg:mb-0 lg:basis-1/3 px-3'
           >

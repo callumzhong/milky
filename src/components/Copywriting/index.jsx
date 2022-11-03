@@ -8,7 +8,10 @@ const Copywriting = () => {
         className={`py-12 text-white ${THEME.container}`}
       >
         <div className='flex flex-wrap -mx-6 gap-12 lg:gap-0'>
-          <div className='flex flex-col lg:flex-row basis-full lg:basis-6/12 gap-6 px-6'>
+          <div
+            data-aos='zoom-in'
+            className='flex flex-col lg:flex-row basis-full lg:basis-6/12 gap-6 px-6'
+          >
             <div className='basis-4/12'>
               <img
                 className='rounded-xl'
@@ -28,7 +31,10 @@ const Copywriting = () => {
               <Button size='small'>Read More</Button>
             </div>
           </div>
-          <div className='flex flex-col lg:flex-row basis-full lg:basis-6/12 gap-6 px-6'>
+          <div
+            data-aos='zoom-in'
+            className='flex flex-col lg:flex-row basis-full lg:basis-6/12 gap-6 px-6'
+          >
             <div className='basis-4/12 text-white'>
               <img
                 className='rounded-xl'

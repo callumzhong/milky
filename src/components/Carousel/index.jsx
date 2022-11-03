@@ -1,6 +1,4 @@
-import Aos from 'aos';
 import clsx from 'clsx';
-import { useEffect } from 'react';
 import { Autoplay, Navigation } from 'swiper';
 import { Swiper, SwiperSlide } from 'swiper/react';
 import Button from '../Button';
@@ -11,10 +9,6 @@ import {
 import THEME from '../theme';
 
 const Carousel = () => {
-  useEffect(() => {
-    Aos.init();
-  }, []);
-
   return (
     <section className='relative'>
       <Swiper

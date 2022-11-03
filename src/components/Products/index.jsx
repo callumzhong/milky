@@ -32,7 +32,10 @@ const data = [
 const Products = () => {
   return (
     <section className={`py-12 ${THEME.container}`}>
-      <div className='max-w-lg text-center mx-auto mb-12'>
+      <div
+        data-aos='fade-up'
+        className='max-w-lg text-center mx-auto mb-12'
+      >
         <TitleSection icon='both' align='center'>
           OUR PRODUCTS
         </TitleSection>
@@ -41,8 +44,10 @@ const Products = () => {
         </h2>
       </div>
       <div className='flex flex-wrap -mx-3 -mb-6'>
-        {data.map((item) => (
+        {data.map((item, idx) => (
           <div
+            data-aos='fade-up'
+            data-aos-delay={250 + idx * 500}
             key={item.name}
             className='basis-full lg:basis-1/3 xl:basis-1/4 px-3 mb-6'
           >
