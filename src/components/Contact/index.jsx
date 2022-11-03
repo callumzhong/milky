@@ -10,7 +10,10 @@ import TitleSection from '../TitleSection';
 const Contact = () => {
   return (
     <section className='container py-12'>
-      <div className='max-w-lg text-center mx-auto mb-12'>
+      <div
+        data-aos='fade-up'
+        className='max-w-lg text-center mx-auto mb-12'
+      >
         <TitleSection icon='both' align='center'>
           CONTACT US
         </TitleSection>
@@ -19,7 +22,11 @@ const Contact = () => {
         </h2>
       </div>
       <div className='flex flex-wrap -mx-6'>
-        <div className='basis-full lg:basis-6/12 px-6 mb-12 lg:mb-0'>
+        <div
+          data-aos='fade-up'
+          data-aos-delay={250}
+          className='basis-full lg:basis-6/12 px-6 mb-12 lg:mb-0'
+        >
           <h3 className={`${THEME.h3} mb-6`}>
             Need a functional contact form?
           </h3>
@@ -84,7 +91,11 @@ const Contact = () => {
             </div>
           </form>
         </div>
-        <div className='basis-full lg:basis-6/12 flex flex-col px-6'>
+        <div
+          data-aos='fade-up'
+          data-aos-delay={500}
+          className='basis-full lg:basis-6/12 flex flex-col px-6'
+        >
           <h3 className={`mb-6 ${THEME.h3}`}>
             Contact Details
           </h3>
@@ -121,7 +132,7 @@ const Contact = () => {
             src='https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d6000584.0718284445!2d-75.770041!3d42.74663!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c24fa5d33f083b%3A0xc80b8f06e177fe62!2sNew%20York%2C%20NY%2C%20USA!5e0!3m2!1sen!2sbd!4v1667376227634!5m2!1sen!2sbd'
             className='border-none w-full flex-1 min-h-[320px]'
             loading='lazy'
-            referrerpolicy='no-referrer-when-downgrade'
+            referrerPolicy='no-referrer-when-downgrade'
           ></iframe>
         </div>
       </div>

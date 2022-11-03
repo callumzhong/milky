@@ -15,7 +15,10 @@ const ContactPage = () => {
   return (
     <>
       <Hero>
-        <h2 className='mb-6 text-7xl text-white'>
+        <h2
+          data-aos='fade-down'
+          className='mb-6 text-7xl text-white'
+        >
           Contact
         </h2>
         <Breadcrumb data={breadcrumbData} />

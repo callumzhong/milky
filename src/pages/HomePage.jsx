@@ -7,16 +7,8 @@ import Products from '@/components/Products';
 import Services from '@/components/Services';
 import Team from '@/components/Team';
 import Testimonial from '@/components/Testimonial';
-import Aos from 'aos';
-import { useEffect } from 'react';
 
 const HomePage = () => {
-  useEffect(() => {
-    Aos.init({
-      duration: 1200,
-    });
-  }, []);
-
   return (
     <>
       <Carousel />

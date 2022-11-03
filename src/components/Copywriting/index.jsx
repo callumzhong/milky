@@ -1,9 +1,16 @@
+import bannerImage_1 from '@/assets/images/banner-1.jpeg';
+import bannerImage_2 from '@/assets/images/banner-2.jpeg';
+import bannerImage from '@/assets/images/banner.jpeg';
 import Button from '@/components/Button';
 import THEME from '../theme';
-
 const Copywriting = () => {
   return (
-    <section className='py-12 my-12 bg-fixed bg-[url("https://source.unsplash.com/random/1920x1080")]'>
+    <section
+      className={`py-12 my-12 bg-fixed`}
+      style={{
+        backgroundImage: `url(${bannerImage})`,
+      }}
+    >
       <div
         className={`py-12 text-white ${THEME.container}`}
       >
@@ -15,7 +22,7 @@ const Copywriting = () => {
             <div className='basis-4/12'>
               <img
                 className='rounded-xl'
-                src='https://source.unsplash.com/random/400x600'
+                src={bannerImage_1}
                 alt=''
               />
             </div>
@@ -38,7 +45,7 @@ const Copywriting = () => {
             <div className='basis-4/12 text-white'>
               <img
                 className='rounded-xl'
-                src='https://source.unsplash.com/random/400x600'
+                src={bannerImage_2}
                 alt=''
               />
             </div>

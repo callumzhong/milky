@@ -1,20 +1,23 @@
+import teamImage_1 from '@/assets/images/team-1.jpeg';
+import teamImage_2 from '@/assets/images/team-2.jpeg';
+import teamImage_3 from '@/assets/images/team-3.jpeg';
 import TitleSection from '@/components/TitleSection';
 import THEME from '../theme';
 import Item from './Item';
 
 const data = [
   {
-    banner: 'https://source.unsplash.com/random/550x650',
+    banner: teamImage_1,
     name: 'Adam Crew',
     job: 'Founder',
   },
   {
-    banner: 'https://source.unsplash.com/random/550x650',
+    banner: teamImage_2,
     name: 'Adam Crew',
     job: 'Founder',
   },
   {
-    banner: 'https://source.unsplash.com/random/550x650',
+    banner: teamImage_3,
     name: 'Adam Crew',
     job: 'Founder',
   },

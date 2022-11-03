@@ -1,3 +1,6 @@
+import serviceImage_1 from '@/assets/images/service-1.jpeg';
+import serviceImage_2 from '@/assets/images/service-2.jpeg';
+import serviceImage_3 from '@/assets/images/service-3.jpeg';
 import TitleSection from '@/components/TitleSection';
 import THEME from '../theme';
 import Description from './Description';
@@ -12,7 +15,7 @@ const About = () => {
           <div className='relative'>
             <img
               className='mb-2 opacity-0'
-              src='https://source.unsplash.com/random/550x550'
+              src={serviceImage_1}
               alt=''
             />
             <div className='bg-confetti absolute h-full w-full top-12 left-12 rounded-md flex flex-col items-center justify-center'>
@@ -24,17 +27,17 @@ const About = () => {
           </div>
           <img
             className='mb-2 rounded-md'
-            src='https://source.unsplash.com/random/550x550'
+            src={serviceImage_1}
             alt=''
           />
           <img
             className='mb-2 rounded-md'
-            src='https://source.unsplash.com/random/550x550'
+            src={serviceImage_2}
             alt=''
           />
           <img
             className='mb-2 rounded-md'
-            src='https://source.unsplash.com/random/550x550'
+            src={serviceImage_3}
             alt=''
           />
         </div>

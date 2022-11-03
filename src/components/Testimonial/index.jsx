@@ -1,3 +1,7 @@
+import testimonialImage_1 from '@/assets/images/testimonial-1.jpeg';
+import testimonialImage_2 from '@/assets/images/testimonial-2.jpeg';
+import testimonialImage_3 from '@/assets/images/testimonial-3.jpeg';
+import testimonialImage_4 from '@/assets/images/testimonial-4.jpeg';
 import { Autoplay, Navigation } from 'swiper';
 import { Swiper, SwiperSlide } from 'swiper/react';
 import {
@@ -8,6 +12,24 @@ import {
 import THEME from '../theme';
 import TitleSection from '../TitleSection';
 
+const data = [
+  {
+    photo: testimonialImage_1,
+    position: 'top-0 left-0',
+  },
+  {
+    photo: testimonialImage_2,
+    position: 'top-[60%] left-[20%]',
+  },
+  {
+    photo: testimonialImage_3,
+    position: 'top-[20%] left-[60%]',
+  },
+  {
+    photo: testimonialImage_4,
+    position: 'bottom-0 right-0',
+  },
+];
 const Testimonial = () => {
   return (
     <section className={`py-12 mb-12 ${THEME.container}`}>
@@ -28,26 +50,14 @@ const Testimonial = () => {
       >
         <div className='relative w-full lg:w-5/12 px-6'>
           <div className='relative min-h-[400px] h-full w-full'>
-            <img
-              className='absolute top-0 left-0 rounded-full block animate-pulse'
-              src='https://source.unsplash.com/random/100x100'
-              alt=''
-            />
-            <img
-              className='absolute top-[60%] left-[20%] rounded-full block animate-pulse'
-              src='https://source.unsplash.com/random/100x100'
-              alt=''
-            />
-            <img
-              className='absolute top-[20%] left-[60%] rounded-full block animate-pulse'
-              src='https://source.unsplash.com/random/100x100'
-              alt=''
-            />
-            <img
-              className='absolute bottom-0 right-0 rounded-full block animate-pulse'
-              src='https://source.unsplash.com/random/100x100'
-              alt=''
-            />
+            {data.map((item, idx) => (
+              <img
+                key={idx}
+                src={item.photo}
+                className={`${item.position} absolute rounded-full block animate-pulse`}
+                alt=''
+              />
+            ))}
           </div>
 
           <FaQuoteLeft className='-z-10 text-gray-200 inset-0 m-auto absolute text-[12.5rem]' />
@@ -70,54 +80,32 @@ const Testimonial = () => {
             spaceBetween={0}
             slidesPerView={1}
           >
-            <SwiperSlide>
-              {({ isActive }) => (
-                <>
-                  <img
-                    className='rounded-full block mb-4'
-                    src='https://source.unsplash.com/random/100x100'
-                    alt=''
-                  />
-                  <p className={`mb-4 ${THEME.h5}`}>
-                    Dolores sed duo clita tempor justo dolor
-                    et stet lorem kasd labore dolore lorem
-                    ipsum. At lorem lorem magna ut et,
-                    nonumy et labore et tempor diam tempor
-                    erat.
-                  </p>
-                  <h5 className={`mb-2 ${THEME.h5}`}>
-                    Client Name
-                  </h5>
-                  <p className='text-hippie-green'>
-                    Profession
-                  </p>
-                </>
-              )}
-            </SwiperSlide>
-            <SwiperSlide>
-              {({ isActive }) => (
-                <>
-                  <img
-                    className='rounded-full block mb-4'
-                    src='https://source.unsplash.com/random/100x100'
-                    alt=''
-                  />
-                  <p className={`mb-4 ${THEME.h5}`}>
-                    Dolores sed duo clita tempor justo dolor
-                    et stet lorem kasd labore dolore lorem
-                    ipsum. At lorem lorem magna ut et,
-                    nonumy et labore et tempor diam tempor
-                    erat.
-                  </p>
-                  <h5 className={`mb-2 ${THEME.h5}`}>
-                    Client Name
-                  </h5>
-                  <p className='text-hippie-green'>
-                    Profession
-                  </p>
-                </>
-              )}
-            </SwiperSlide>
+            {data.map((item, idx) => (
+              <SwiperSlide key={idx}>
+                {({ isActive }) => (
+                  <>
+                    <img
+                      className='rounded-full block mb-4'
+                      src={item.photo}
+                      alt=''
+                    />
+                    <p className={`mb-4 ${THEME.h5}`}>
+                      Dolores sed duo clita tempor justo
+                      dolor et stet lorem kasd labore dolore
+                      lorem ipsum. At lorem lorem magna ut
+                      et, nonumy et labore et tempor diam
+                      tempor erat.
+                    </p>
+                    <h5 className={`mb-2 ${THEME.h5}`}>
+                      Client Name
+                    </h5>
+                    <p className='text-hippie-green'>
+                      Profession
+                    </p>
+                  </>
+                )}
+              </SwiperSlide>
+            ))}
           </Swiper>
           <div className='flex mt-8 gap-2'>
             <button

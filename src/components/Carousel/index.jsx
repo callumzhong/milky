@@ -1,3 +1,5 @@
+import carouselImage_1 from '@/assets/images/carousel-1.jpeg';
+import carouselImage_2 from '@/assets/images/carousel-2.jpeg';
 import clsx from 'clsx';
 import { Autoplay, Navigation } from 'swiper';
 import { Swiper, SwiperSlide } from 'swiper/react';
@@ -33,10 +35,10 @@ const Carousel = () => {
             <figure className='relative min-h-[450px] mb-12'>
               <img
                 className='block absolute w-full h-full max-w-none md:max-w-full md:h-auto md:static md:w-auto object-cover md:object-contain'
-                src='https://source.unsplash.com/random/1920x1080'
+                src={carouselImage_1}
               />
-              <figcaption className='absolute inset-0 container px-4 lg:px-20 flex items-center text-white '>
-                <div className='basis-full lg:basis-2/3 text-right ml-auto'>
+              <figcaption className='absolute inset-0 container px-4 lg:px-20 xl:px-0 flex items-center text-white '>
+                <div className='basis-full lg:basis-2/3 mr-auto'>
                   <div className={THEME.h4}>
                     Welcome to our dairy farm
                   </div>
@@ -59,9 +61,9 @@ const Carousel = () => {
             <figure className='relative min-h-[450px] mb-12'>
               <img
                 className='block absolute w-full h-full max-w-none md:max-w-full md:h-auto md:static md:w-auto object-cover md:object-contain'
-                src='https://source.unsplash.com/random/1920x1080'
+                src={carouselImage_2}
               />
-              <figcaption className='absolute inset-0 container px-4 lg:px-20 flex items-center text-white '>
+              <figcaption className='absolute inset-0 container px-4 lg:px-20 xl:px-0 flex items-center text-white '>
                 <div className='basis-full lg:basis-2/3 text-right ml-auto'>
                   <div className={THEME.h4}>
                     Welcome to our dairy farm
@@ -72,7 +74,7 @@ const Carousel = () => {
                       { 'animate-slideInRight': isActive },
                     )}
                   >
-                    The Farm of Dairy products
+                    Best Organic Dairy Products
                   </h3>
                   <Button>Explore More</Button>
                 </div>

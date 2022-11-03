@@ -17,11 +17,7 @@ module.exports = {
       center: true,
       padding: '12px',
     },
-    extend: {
-      backgroundImage: {
-        'hero-pattern':
-          "url('https://source.unsplash.com/random/1920x1080')",
-      },
+      extend: {
       fontSize: {
         lg: '1.25rem',
         xl: '1.5rem',

@@ -25,7 +25,7 @@ const Features = () => {
     );
     observer.observe(sectionRef.current);
     return () => {
-      observer.unobserve(sectionRef.current);
+      observer.disconnect();
     };
   }, []);
 

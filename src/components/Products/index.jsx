@@ -1,3 +1,7 @@
+import productImage_1 from '@/assets/images/product-1.jpeg';
+import productImage_2 from '@/assets/images/product-2.jpeg';
+import productImage_3 from '@/assets/images/product-3.jpeg';
+import productImage_4 from '@/assets/images/product-4.jpeg';
 import TitleSection from '@/components/TitleSection';
 import THEME from '../theme';
 import Item from './Item';
@@ -7,25 +11,25 @@ const data = [
     name: 'Pure Milk',
     originalPrice: 29.0,
     specialPrice: 19.0,
-    banner: 'https://source.unsplash.com/random/550x550',
+    banner: productImage_1,
   },
   {
     name: 'Fresh Meat',
     originalPrice: 29.0,
     specialPrice: 19.0,
-    banner: 'https://source.unsplash.com/random/550x550',
+    banner: productImage_2,
   },
   {
     name: 'Dairy Products',
     originalPrice: 29.0,
     specialPrice: 19.0,
-    banner: 'https://source.unsplash.com/random/550x550',
+    banner: productImage_3,
   },
   {
     name: 'Organic Food',
     originalPrice: 29.0,
     specialPrice: 19.0,
-    banner: 'https://source.unsplash.com/random/550x550',
+    banner: productImage_4,
   },
 ];
 

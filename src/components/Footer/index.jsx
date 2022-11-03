@@ -6,7 +6,10 @@ import QuickLinks from './QuickLinks';
 
 const Footer = () => {
   return (
-    <div className={` ${THEME.container} mb-12`}>
+    <div
+      data-aos='fade-up'
+      className={` ${THEME.container} mb-12`}
+    >
       <div className='flex flex-wrap -mx-6'>
         <div className='basis-full px-6 lg:basis-1/4 mb-12'>
           <Office />

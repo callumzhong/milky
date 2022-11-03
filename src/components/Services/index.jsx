@@ -1,22 +1,24 @@
+import serviceImage_1 from '@/assets/images/service-1.jpeg';
+import serviceImage_2 from '@/assets/images/service-2.jpeg';
+import serviceImage_3 from '@/assets/images/service-3.jpeg';
 import TitleSection from '@/components/TitleSection';
 import THEME from '../theme';
 import Item from './Item';
-
 const data = [
   {
     title: 'Best Animal Selection',
     body: `Erat ipsum justo amet duo et elitr dolor, est duo duo eos lorem sed diam stet diam sed stet.`,
-    banner: 'https://source.unsplash.com/random/550x550',
+    banner: serviceImage_1,
   },
   {
     title: 'Breeding & Veterinary',
     body: `Erat ipsum justo amet duo et elitr dolor, est duo duo eos lorem sed diam stet diam sed stet.`,
-    banner: 'https://source.unsplash.com/random/550x550',
+    banner: serviceImage_2,
   },
   {
     title: 'Care & Milking',
     body: `Erat ipsum justo amet duo et elitr dolor, est duo duo eos lorem sed diam stet diam sed stet.`,
-    banner: 'https://source.unsplash.com/random/550x550',
+    banner: serviceImage_3,
   },
 ];
 

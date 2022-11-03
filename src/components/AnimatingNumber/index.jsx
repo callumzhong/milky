@@ -9,7 +9,7 @@ const colors = {
 const AnimatingNumber = ({
   isIntersecting,
   number,
-  sec = '1s',
+  sec = '5s',
   color = 'white',
 }) => {
   const ref = useRef(null);
