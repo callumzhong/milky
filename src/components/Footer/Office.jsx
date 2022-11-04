@@ -1,4 +1,3 @@
-import { Link } from 'react-router-dom';
 import {
   IcBaselinePhone,
   IcRoundEmail,
@@ -32,24 +31,36 @@ const Office = () => {
       </ul>
       <ul className='flex gap-2 items-center'>
         <li>
-          <Link className='block rounded-full text-lunar-green hover:text-black p-2 bg-confetti'>
+          <a
+            href='https://twitter.com'
+            className='block rounded-full text-lunar-green hover:text-black p-2 bg-confetti'
+          >
             <MdiTwitter className='text-lg' />
-          </Link>
+          </a>
         </li>
         <li>
-          <Link className='block rounded-full text-lunar-green hover:text-black p-2 bg-confetti'>
+          <a
+            href='https://www.facebook.com'
+            className='block rounded-full text-lunar-green hover:text-black p-2 bg-confetti'
+          >
             <IonSocialFacebook className='text-lg' />
-          </Link>
+          </a>
         </li>
         <li>
-          <Link className='block rounded-full text-lunar-green hover:text-black p-2 bg-confetti'>
+          <a
+            href='https://www.youtube.com'
+            className='block rounded-full text-lunar-green hover:text-black p-2 bg-confetti'
+          >
             <MdiYoutube className='text-lg' />
-          </Link>
+          </a>
         </li>
         <li>
-          <Link className='block rounded-full text-lunar-green hover:text-black p-2 bg-confetti'>
+          <a
+            href='https://www.instagram.com'
+            className='block rounded-full text-lunar-green hover:text-black p-2 bg-confetti'
+          >
             <MdiInstagram className='text-lg' />
-          </Link>
+          </a>
         </li>
       </ul>
     </>
