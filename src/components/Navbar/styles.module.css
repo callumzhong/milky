@@ -1,0 +1,5 @@
+@media (min-width: theme('screens.lg')) {
+  .flex {
+    display: flex !important;
+  }
+}
