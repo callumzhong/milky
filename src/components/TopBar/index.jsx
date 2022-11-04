@@ -11,16 +11,25 @@ const TopBar = () => {
     <div className='pl-12 flex-shrink-0 flex-grow-0 hidden lg:flex items-center bg-lunar-green '>
       <div className='flex items-center gap-4 text-white'>
         <span className=''>Follow Us: </span>
-        <a href='' className='text-xl'>
+        <a
+          href='https://www.facebook.com'
+          className='text-xl'
+        >
           <IonSocialFacebook />
         </a>
-        <a href='' className='text-xl'>
+        <a href='https://twitter.com' className='text-xl'>
           <MdiTwitter />
         </a>
-        <a href='' className='text-xl'>
+        <a
+          href='https://www.linkedin.com'
+          className='text-xl'
+        >
           <RiLinkedinFill />
         </a>
-        <a href='' className='text-xl'>
+        <a
+          href='https://www.instagram.com'
+          className='text-xl'
+        >
           <MdiInstagram />
         </a>
       </div>
