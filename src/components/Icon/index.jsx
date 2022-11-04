@@ -6,6 +6,7 @@ export { default as IcBaselinePhone } from './IcBaselinePhone';
 export { default as IconoirLink } from './IconoirLink';
 export { default as IcRoundEmail } from './IcRoundEmail';
 export { default as IonSocialFacebook } from './IonSocialFacebook';
+export { default as MaterialSymbolsArrowUpward } from './MaterialSymbolsArrowUpward';
 export { default as MaterialSymbolsGardenCartOutline } from './MaterialSymbolsGardenCartOutline';
 export { default as MaterialSymbolsLocationOnRounded } from './MaterialSymbolsLocationOnRounded';
 export { default as MaterialSymbolsMenu } from './MaterialSymbolsMenu';

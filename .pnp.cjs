@@ -39,6 +39,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["eslint-config-prettier", "virtual:4dcbb5f5a1da82e85b1ad88670a9fb01c88ffcd0951a233825e4630d632759e69f364f05c8a0d6b30183e3f263958bc0a868467605c5a6a5b4d61c7f7630aff6#npm:8.5.0"],\
             ["eslint-plugin-prettier", "virtual:4dcbb5f5a1da82e85b1ad88670a9fb01c88ffcd0951a233825e4630d632759e69f364f05c8a0d6b30183e3f263958bc0a868467605c5a6a5b4d61c7f7630aff6#npm:4.2.1"],\
             ["eslint-plugin-react", "virtual:4dcbb5f5a1da82e85b1ad88670a9fb01c88ffcd0951a233825e4630d632759e69f364f05c8a0d6b30183e3f263958bc0a868467605c5a6a5b4d61c7f7630aff6#npm:7.31.10"],\
+            ["photoswipe", "npm:5.3.3"],\
             ["postcss", "npm:8.4.18"],\
             ["react", "npm:18.2.0"],\
             ["react-collapsed", "virtual:4dcbb5f5a1da82e85b1ad88670a9fb01c88ffcd0951a233825e4630d632759e69f364f05c8a0d6b30183e3f263958bc0a868467605c5a6a5b4d61c7f7630aff6#npm:3.5.0"],\
@@ -3018,6 +3019,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["eslint-config-prettier", "virtual:4dcbb5f5a1da82e85b1ad88670a9fb01c88ffcd0951a233825e4630d632759e69f364f05c8a0d6b30183e3f263958bc0a868467605c5a6a5b4d61c7f7630aff6#npm:8.5.0"],\
             ["eslint-plugin-prettier", "virtual:4dcbb5f5a1da82e85b1ad88670a9fb01c88ffcd0951a233825e4630d632759e69f364f05c8a0d6b30183e3f263958bc0a868467605c5a6a5b4d61c7f7630aff6#npm:4.2.1"],\
             ["eslint-plugin-react", "virtual:4dcbb5f5a1da82e85b1ad88670a9fb01c88ffcd0951a233825e4630d632759e69f364f05c8a0d6b30183e3f263958bc0a868467605c5a6a5b4d61c7f7630aff6#npm:7.31.10"],\
+            ["photoswipe", "npm:5.3.3"],\
             ["postcss", "npm:8.4.18"],\
             ["react", "npm:18.2.0"],\
             ["react-collapsed", "virtual:4dcbb5f5a1da82e85b1ad88670a9fb01c88ffcd0951a233825e4630d632759e69f364f05c8a0d6b30183e3f263958bc0a868467605c5a6a5b4d61c7f7630aff6#npm:3.5.0"],\
@@ -3457,6 +3459,15 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
           "packageLocation": "./.yarn/cache/path-parse-npm-1.0.7-09564527b7-49abf3d811.zip/node_modules/path-parse/",\
           "packageDependencies": [\
             ["path-parse", "npm:1.0.7"]\
+          ],\
+          "linkType": "HARD"\
+        }]\
+      ]],\
+      ["photoswipe", [\
+        ["npm:5.3.3", {\
+          "packageLocation": "./.yarn/cache/photoswipe-npm-5.3.3-54599bedbc-b114801f3f.zip/node_modules/photoswipe/",\
+          "packageDependencies": [\
+            ["photoswipe", "npm:5.3.3"]\
           ],\
           "linkType": "HARD"\
         }]\

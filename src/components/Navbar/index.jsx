@@ -8,7 +8,7 @@ import useCollapse from 'react-collapsed';
 import { useLocation } from 'react-router-dom';
 import THEME from '../theme';
 import Link from './Link';
-
+import styles from './styles.module.css';
 const Navbar = () => {
   const location = useLocation();
   const [isExpanded, setExpanded] = useState(false);
@@ -65,7 +65,7 @@ const Navbar = () => {
   return (
     <div
       className={clsx(
-        'flex flex-shrink-0 flex-grow-0 flex-wrap sticky bg-white shadow-[0_0.125rem_0.125rem_rgba(0,0,0,0.08)] z-50 top-0 items-center px-12 py-2 ease-in-out duration-700',
+        'flex flex-shrink-0 flex-grow-0 flex-wrap sticky bg-white shadow-[0_0.125rem_0.125rem_rgba(0,0,0,0.08)] z-50 items-center px-12 py-2 ease-in-out duration-700',
         {
           '-top-[100px]': !isOpenAnimationScroll,
           'top-0': isOpenAnimationScroll,
@@ -83,7 +83,8 @@ const Navbar = () => {
       </button>
       <div
         className={clsx(
-          'basis-full flex-grow items-center lg:basis-auto lg:flex lg:flex-1',
+          'basis-full flex-grow items-center lg:basis-auto lg:flex-1',
+          styles.flex,
         )}
         {...getCollapseProps()}
       >
