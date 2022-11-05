@@ -2,7 +2,6 @@
   "name": "milky",
   "private": true,
   "version": "0.0.1",
-  "type": "module",
   "scripts": {
     "dev": "vite",
     "build": "vite build",
@@ -26,14 +25,16 @@
     "@types/react": "^18.0.17",
     "@types/react-dom": "^18.0.6",
     "@vitejs/plugin-react": "^2.1.0",
-    "autoprefixer": "^10.4.12",
+    "autoprefixer": "^10.4.13",
+    "concurrently": "^7.5.0",
     "eslint": "latest",
     "eslint-config-prettier": "^8.5.0",
-    "eslint-plugin-prettier": "^4.2.1",
     "eslint-plugin-react": "latest",
     "postcss": "^8.4.18",
-    "tailwindcss": "^3.1.8",
+    "prettier": "^2.7.1",
+    "prettier-plugin-tailwindcss": "^0.1.13",
+    "tailwindcss": "^3.2.2",
     "vite": "^3.1.8"
   },
-  "packageManager": "yarn@3.2.4"
+  "packageManager": "yarn@1.22.19"
 }
